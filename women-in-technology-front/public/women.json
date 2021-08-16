@@ -1,0 +1,26 @@
+{
+    "name": "women in technology",
+    "list":[
+        {
+            "name":"Ada Lovelace",
+            "photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Ada_lovelace.jpg/200px-Ada_lovelace.jpg",
+            "history": "Ada Lovelace, foi uma matemática e escritora inglesa. Hoje é reconhecida principalmente por ter escrito o primeiro algoritmo para ser processado por uma máquina, a máquina analítica de Charles Babbage.[1][2] Durante o período em que esteve envolvida com o projeto de Babbage, ela desenvolveu os algoritmos que permitiriam à máquina computar os valores de funções matemáticas, além de publicar uma coleção de notas sobre a máquina analítica. Por esse trabalho é considerada a primeira programadora de toda a história."
+        },
+        {
+            "name":"Carol Shaw",
+            "photo":"https://upload.wikimedia.org/wikipedia/commons/5/59/Carol_Shaw_Holding_Gold_River_Raid_Cartridge.jpg",
+            "history": "Formada em Ciências da Computação pela universidade de Berkeley, Carol foi contratada pela Atari em 1978. Neste mesmo ano, a jovem nascida no seio do Vale do Silício, em Palo Alto, Califórnia, se tornou a primeira programadora de um game. No caso, era um simples jogo da velha chamado 3D Tic-Tac-Toe, mas foi um passo importantíssimo para abrir as portas para outras mulheres entrarem na indústria de desenvolvimento. Quatro anos depois, Carol Shaw, já como funcionária da pela Activision, se tornaria programadora do inesquecível River Raid, seu game de maior sucesso."
+        },
+        {
+            "name":"Grace Hopper",
+            "photo":"https://t.ctcdn.com.br/OnA2QXi1l_r9j1pUkciv4RDVArM=/i302027.jpeg",
+            "history": "Antes da Marinha, Hopper conquistou o Ph.D. em matemática na Universidade de Yale e foi professora de matemática na Faculdade Vassar. Tentou entrar na Marinha durante a Segunda Guerra Mundial, mas foi rejeitada por ter 34 anos. Por consequência, entrou na Navy Reserves (em tradução livre, a Reserva da Marinha).Em 1944, começou sua carreira em computação, quando trabalhou no Mark I de Harvard no time conduzido por Howard H. Aiken. Neste período, foi co-autora de três artigos científicos baseados nesse projeto.Em 1949, ela passou a participar do Eckert-Mauchly Computer Corporation e fez parte do time que desenvolveu o computador UNIVAC I. Enquanto estava no Eckert-Mauchly, começou o desenvolvimento do seu compilador. O programa dela convertia termos em Inglês para código de máquina e em 1952, tinha terminado o desenvolvimento do seu programa ligador (originalmente chamado de compilador), o qual foi desenvolvido para o Sistema A-0.É dito que é de autoria de Hopper o termo 'bug' usado para designar uma falha num código-fonte. Quando procurava um problema em seu computador; percebeu que havia um inseto morto no computador causando transtorno, desde então o termo bug passou a ser usado."
+        },
+        {
+            "name":"Gladys West",
+            "photo":"https://pbs.twimg.com/media/EnNPjq3XIAQjHv-.jpg",
+            "history": "Além de nos ajudar a saber onde estamos e nos guiar até o nosso destino final, o GPS está presente em outras atividades nossas como pedir comida, chamar um Uber e até dar match no aplicativo de paquera. O que você talvez ainda não saiba sobre essa tecnologia é que ela foi criada por uma mulher.Nascida no estado da Virgínia (EUA) em 1930, Gladys West é uma entre tantas mulheres que, apesar das grandes contribuições para a humanidade, tiveram suas conquistas apagadas na história, cujas realizações só foram conhecidas bem mais tarde, no final da vida ou de maneira póstuma.Hoje com 91 anos de idade e já aposentada, West é a matemática e programadora de computadores que abriu as portas para uma das invenções mais usadas no mundo."
+        }
+
+]
+}
