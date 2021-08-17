@@ -3,20 +3,14 @@ import ReviewCard from '../../components/card/Card'
 import {HomeContainer} from './styled'
 function HomePage (){
     const [womenList, setWomenList]=useState([])
-    const [expanded, setExpanded] = React.useState(false);
-    const [favorite, setFavorite] = React.useState(false);
+    
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-       };
-     const handleFavoriteClick = () => {
-        setFavorite(!favorite);
-       };
 
     useEffect(() => {
       getInfos();
     }, []);
-    // console.log(womenList.list)
+   
+  
   
     const getInfos = () => {
       const url = "women.json";
@@ -36,11 +30,12 @@ function HomePage (){
     let renderAllCards = womenList.list && womenList.list.map((women)=>{
         return(
             <ReviewCard 
+                id={women.id}
                 women={women} 
-                expanded={expanded} 
-                handleExpandClick={handleExpandClick}
-                handleFavoriteClick ={handleFavoriteClick}
-                favorite={favorite}
+                list={womenList.list} 
+                // handleExpandClick={()=>handleExpandClick(women.id)}
+                // handleFavoriteClick ={()=>handleFavoriteClick(women.id)}
+                // favorite={favorite}
             />
         )
     })

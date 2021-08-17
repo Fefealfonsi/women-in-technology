@@ -20,12 +20,28 @@ import { useStyles } from './styled';
 
 export  function ReviewCard (props) {
   const classes = useStyles();
-//   const [expanded, setExpanded] = React.useState(false);
 
+const [expanded, setExpanded] = React.useState(false);
+    const [favorite, setFavorite] = React.useState(false);
+
+    const handleExpandClick = (id) => {
+      
+        setExpanded(!expanded)
+      
+
+      console.log("ID1",id,)
+    };
+     const handleFavoriteClick = () => {
+      // const checkId = props.list.some((iten)=> {return id===iten.id, console.log("iten.id", iten.id)})
+      // console.log("ID",id, "checkId",checkId)
+      // if(checkId){
+        setFavorite(!favorite)
+        //  }
+    };
   
 
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} key={props.id}>
       <CardHeader
         
         title={props.women.name}
@@ -42,22 +58,22 @@ export  function ReviewCard (props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites" onClick={props.handleFavoriteClick}>
-          <FavoriteIcon  className={props.favorite?classes.enable:classes.disable}/>
+        <IconButton aria-label="add to favorites" onClick={handleFavoriteClick}>
+          <FavoriteIcon  className={favorite?classes.enable:classes.disable}/>
         </IconButton>
         
         <IconButton
           className={clsx(classes.expand, {
-            [classes.expandOpen]: props.expanded,
+            [classes.expandOpen]:expanded,
           })}
-          onClick={props.handleExpandClick}
-          aria-expanded={props.expanded}
+          onClick={()=>handleExpandClick(props.id)}
+          aria-expanded={expanded}
           aria-label="show more"
         >
           <ExpandMoreIcon />
         </IconButton>
       </CardActions>
-      <Collapse in={props.expanded} timeout="auto" unmountOnExit>
+      <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph><b>Breve história:</b></Typography>
           <Typography paragraph>

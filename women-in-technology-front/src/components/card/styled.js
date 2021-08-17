@@ -24,6 +24,6 @@ export const useStyles = makeStyles((theme) => ({
       color: red[500]
     },
     disable: {
-        color: red[50]
+        color: red[100]
       }
   }));
