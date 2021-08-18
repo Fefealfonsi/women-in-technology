@@ -1,14 +1,23 @@
 import react from "react"
-import {NavBarContainer,GoToFormButton}from './styled'
+import { NavBarContainer, SearchContainer } from './styled'
 import feminism from '../../assets/feminism_simbol.png'
-function NavBar (){
+import SearchIcon from '@material-ui/icons/Search';
+function NavBar(props) {
 
-    return(
+    return (
         <NavBarContainer>
-            <img src={feminism} alt='logo'/>
+            <img src={feminism} alt='logo' />
             <p>Mulheres na Tecnologia</p>
-            <GoToFormButton>Colabore</GoToFormButton>
+            <SearchContainer>
+                <input
+                    type="text"
+                    placeholder="Busque pelo nome"
+                    value={props.search}
+                    onChange={props.onChangeSearch}
+                />
+                <SearchIcon />
+            </SearchContainer>
         </NavBarContainer>
     )
 }
-export default NavBar 
+export default NavBar

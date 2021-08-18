@@ -1,17 +1,14 @@
 import React, { useState, useEffect } from "react"
 import ReviewCard from '../../components/card/Card'
 import {HomeContainer} from './styled'
-function HomePage (){
+function HomePage (props){
     const [womenList, setWomenList]=useState([])
     
-
-
     useEffect(() => {
       getInfos();
     }, []);
    
-  
-  
+   
     const getInfos = () => {
       const url = "women.json";
       fetch(url)
@@ -25,17 +22,21 @@ function HomePage (){
         });
     };
 
-    
+    const getSearch = () => {
+      return womenList.list && womenList.list
+      .filter((woman) => props.search? woman.name.includes((props.search)) : true)
+        
+    }
 
-    let renderAllCards = womenList.list && womenList.list.map((woman)=>{
+    const searchInList = getSearch()
+
+    const renderAllCards = searchInList.map((woman)=>{
         return(
             <ReviewCard 
                 id={woman.id}
                 woman={woman} 
-                list={womenList.list} 
-                // handleExpandClick={()=>handleExpandClick(women.id)}
-                // handleFavoriteClick ={()=>handleFavoriteClick(women.id)}
-                // favorite={favorite}
+                
+                
             />
         )
     })
