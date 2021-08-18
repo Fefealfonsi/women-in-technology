@@ -13,6 +13,7 @@ height:100%;
 background-image:url(${background});
 background-repeat:no-repeat;
 background-size:cover;
+/* padding: 60px 0; */
 `
 
 
@@ -23,7 +24,9 @@ function App() {
     setSearch(event.target.value)
   }
   return (
-    <AppContainer>
+    <div>
+     
+      <AppContainer>
       <NavBar
       search={search}
       onChangeSearch={onChangeSearch}
@@ -32,6 +35,7 @@ function App() {
       search={search}
       />
     </AppContainer>
+    </div>
   );
 }
 

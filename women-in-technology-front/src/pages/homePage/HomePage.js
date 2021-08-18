@@ -30,7 +30,7 @@ function HomePage (props){
 
     const searchInList = getSearch()
 
-    const renderAllCards = searchInList.map((woman)=>{
+    const renderAllCards = womenList.list && searchInList.map((woman)=>{
         return(
             <ReviewCard 
                 id={woman.id}

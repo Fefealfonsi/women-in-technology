@@ -7,7 +7,7 @@ export const NavBarContainer = styled.div`
     width: 100vw;
     height:80px;
     background-color: rgba(226, 42, 156, 0.5);
-
+    
     img{
         height:70px
     }
