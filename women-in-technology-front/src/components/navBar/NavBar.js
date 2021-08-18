@@ -1,4 +1,3 @@
-import react from "react"
 import { NavBarContainer, SearchContainer } from './styled'
 import feminism from '../../assets/feminism_simbol.png'
 import SearchIcon from '@material-ui/icons/Search';

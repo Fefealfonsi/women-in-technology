@@ -1,4 +1,4 @@
-import React,{useState}  from 'react'
+import React, { useState } from 'react'
 import HomePage from './pages/homePage/HomePage'
 import NavBar from './components/navBar/NavBar'
 import styled from 'styled-components'
@@ -18,23 +18,23 @@ background-size:cover;
 
 
 function App() {
-  const[search, setSearch] = useState("")
+  const [search, setSearch] = useState("")
 
   const onChangeSearch = (event) => {
     setSearch(event.target.value)
   }
   return (
     <div>
-     
+
       <AppContainer>
-      <NavBar
-      search={search}
-      onChangeSearch={onChangeSearch}
-      />
-      <HomePage
-      search={search}
-      />
-    </AppContainer>
+        <NavBar
+          search={search}
+          onChangeSearch={onChangeSearch}
+        />
+        <HomePage
+          search={search}
+        />
+      </AppContainer>
     </div>
   );
 }
