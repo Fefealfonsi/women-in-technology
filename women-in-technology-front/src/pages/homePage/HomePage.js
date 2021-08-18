@@ -27,11 +27,11 @@ function HomePage (){
 
     
 
-    let renderAllCards = womenList.list && womenList.list.map((women)=>{
+    let renderAllCards = womenList.list && womenList.list.map((woman)=>{
         return(
             <ReviewCard 
-                id={women.id}
-                women={women} 
+                id={woman.id}
+                woman={woman} 
                 list={womenList.list} 
                 // handleExpandClick={()=>handleExpandClick(women.id)}
                 // handleFavoriteClick ={()=>handleFavoriteClick(women.id)}

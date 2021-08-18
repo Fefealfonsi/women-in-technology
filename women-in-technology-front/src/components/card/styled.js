@@ -1,11 +1,13 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { red } from '@material-ui/core/colors';
+import { purple } from '@material-ui/core/colors';
+import { grey } from '@material-ui/core/colors';
 
 export const useStyles = makeStyles((theme) => ({
     root: {
       width: 345,
       margin: 20
     },
+    
     media: {
       height: 0,
       paddingTop: "56.25%" // 16:9
@@ -21,9 +23,9 @@ export const useStyles = makeStyles((theme) => ({
       transform: "rotate(180deg)"
     },
     enable: {
-      color: red[500]
+      color: purple[500]
     },
     disable: {
-        color: red[100]
+        color: grey[500]
       }
   }));
