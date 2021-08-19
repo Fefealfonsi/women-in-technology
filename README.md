@@ -29,7 +29,8 @@ Cada Card tem: </h4>
 <p> 2-) Responsividade do NavBar para mobile </p>
 <p> 3-) Melhora da estilização do backgound </p>
 
-
+<h1> Link do surge </h1>
+https://women-in-tech-f.surge.sh/
 
 <h1>📷Prints do projeto </h1>
 ![image](https://user-images.githubusercontent.com/71261731/129981484-3e90b475-c832-4a58-b5f8-77775e305dfd.png)
